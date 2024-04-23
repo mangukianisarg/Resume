@@ -1,0 +1,269 @@
+%-------------------------
+% Resume in Latex
+% Author : Nisarg Mangukiya
+% Based off of: https://github.com/mangukianisarg/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-1pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeadingListStart}{
+  \begin{itemize}[leftmargin=0in, label={}]
+}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSectionType}[3]{
+  \item\begin{tabular*}{1\textwidth}[t]{
+    p{0.18\linewidth}p{0.015\linewidth}p{0.80\linewidth}
+  }
+    {\fontsize{10pt}{0}\selectfont\textbf{#1}} & #2 & #3 \\
+     [-7pt]
+  \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textnormal {\small#3} & \textnormal {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge  \textbf{Nisarg Mangukiya}} \\ \vspace{4pt}
+    % Eligible to work for a full 4-8 month term across Canada from Fall 2023 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +919712397971 ~ $|$ \href{mailto:mangukianisarg@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mangukianisarg@gmail.com}} ~ $|$ 
+    \href{https://www.linkedin.com/in/mangukiyanisarg/}{\raisebox{-0.2\height}\faLinkedin\ \underline{/in/mangukiyanisarg/}}  ~ $|$
+    \href{https://github.com/mangukianisarg}{\raisebox{-0.2\height}\faGithub\ \underline{/mangukianisarg}}
+    \vspace{-7pt}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+% \section{TECHNICAL SKILLS}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Programming Languages}{: Java, Python, C/C++, JavaScript, TypeScript,  HTML/CSS ,SQL} \\
+%      \textbf{Frameworks/ Library}{: ReactJS, NodeJS, Redux, JUnit, RESTful APIs, ExpressJS, Mongoose} \\
+%     \textbf{Databases}{:  MySQL, MongoDB, DynamoDB, Relational Database (RDBMS), Amazon S3 bucket} \\
+%     \textbf{Cloud Services}{: Amazon Web Services (AWS), Google Cloud Platform (GCP), Heroku, Netlify} \\
+%      \textbf{Misc}{: Jira, Git, Docker, MS Office, Postman, VS Code, Eclipse IDE, IntelliJ} \\
+%      \textbf{Concepts}{: Agile methodology, SOLID Principles, Functional Programming, CI/CD, Software Development Life Cycle, Test Driven Development (TDD), Design Patterns} \\
+%     }}
+%  \end{itemize}
+%  \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\vspace{5pt}
+\section{PROFESSIONAL EXPERIENCE}
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+     \resumeExperienceHeading
+         {\textbf{Mobile Engineer} $|$ \emph{ Real Software Solution }}{Aug 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Actively engaged in the end-to-end process of developing robust Mobile Application using Flutter, Node.js and MSSQL.}
+        \resumeItem{Collaborated with cross-functional teams to achieve cohesive solutions, implemented RESTful API principles, and conducted comprehensive testing, ensuring reliability and seamless integration across diverse clients and platforms.}
+        \resumeItem{Proficient in leveraging Face-api.js for facial recognition tasks, with expertise in Node.js and Express for backend development.}
+        \resumeItem{Developed a comprehensive Diamond Factory Report system featuring advanced filtering and order creation functionalities for both clients and administrators. Built using Flutter for the frontend, Node.js for the backend, and MSSQL for database management, with deployment on IIS server. Delivered a seamless user experience and streamlined operations for efficient diamond management and order processing.}
+      \resumeItemListEnd
+      \vspace{-15pt}
+      \resumeExperienceHeading
+         {\textbf{Associate Software Engineer} $|$ \emph{ Indium Software (India) Private Limited }}{June 2021 -- July 2023}
+         \resumeItemListStart
+        \resumeItem{Enhanced the Gettr.com mobile app experience, catering to the preferences of American conservatives, by implementing live video features and refining UI elements. Leveraged Flutter and Dart for development, while efficiently managing tasks with JIRA. Ensured code integrity through GitLab version control and validated APIs using Postman for a seamless user experience.}
+        \resumeItem{Led the development of REM42.ai, a comprehensive mobile application facilitating seamless doctor-patient consultation booking. Leveraged Flutter for dynamic UI, Node.js for backend operations, and PostgreSQL on AWS for robust data management. Integrated Agora for high-quality video and audio consultations, ensuring optimal communication for both doctors and patients. Delivered an end-to-end solution empowering efficient healthcare access.}
+        \resumeItem{Led development of a Proof of Concept (PoC) document scanner utilizing React.js and Python. Designed and implemented a user-friendly interface with React.js while leveraging Python for efficient document processing and analysis. Demonstrated ability to merge frontend and backend technologies to create a robust and innovative solution for document management.}
+      \resumeItemListEnd
+        \vspace{-15pt}
+    \resumeExperienceHeading
+         {\textbf{Flutter Developer} $|$ \emph{Slash Start (formerly xR Studio)
+            }}{Oct 2020 - June 2021}
+      \resumeItemListStart
+       \resumeItem{Collaborated on the development of the Frontend Kitchen app tailored for Chinese restaurant partners, specializing in adding new orders and efficiently managing order statuses. Utilized Flutter and Dart to create seamless user experiences, ensuring smooth interaction and enhanced operational efficiency.}     
+       \resumeItem{Led development of frontend for United Native Health App utilizing Flutter/Dart, enabling seamless doctor-patient consultations. Implemented features for prescription management, allowing efficient addition and removal. Ensured user-friendly interface and smooth functionality to enhance healthcare accessibility.}
+      \resumeItem{Designed sleek and intuitive UI for a Cricket Score App utilizing Flutter Dart, optimizing user experience and engagement. Implemented modern design principles to ensure seamless navigation and visual appeal, resulting in enhanced user satisfaction and retention.}
+    \resumeItemListEnd 
+       \vspace{-15pt}\
+         
+          \resumeExperienceHeading
+         {\textbf{Augmented Reality Intern} $|$ \emph{ Spark AR Open Program from Meta }}{Mar 2020 -- Jul 2020}
+      \resumeItemListStart
+        \resumeItem{Worked on building 3D models (Blender) for the AR Filters.}
+        \resumeItem{Created different 2D and 3D materials like images and
+        sequence animations.}
+        \resumeItem{Made AR Filter for Chumbak Design Pvt. Ltd.}
+    \resumeItemListEnd      
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+  \resumeHeadingListStart{}
+    \resumeSectionType{Languages}{:}{\fontsize{10pt}{0}\selectfont Dart, JavaScript, TypeScript, Java, SQL, }
+    \resumeSectionType{Frameworks \& Library}{:}{\fontsize{10pt}{0}\selectfont Flutter, Dart, Spring Boot, Node.js, express.js, React.js, face-api.js  AR Core, WebRTC}
+    \resumeSectionType{Databases}{:}{\fontsize{10pt}{0}\selectfont MySQL, PostgreSQL, MSSQL, XML, JSON}
+    % \resumeSectionType{Cloud Services}{:}{\fontsize{10pt}{0}\selectfont Amazon Web Services (AWS Certified Cloud Practitioner), Google Cloud Platform (GCP), Heroku}
+    \resumeSectionType{Tools \& Technologies}{:}{\fontsize{10pt}{0}\selectfont   Android Studio, Xcode, Postman, VS Code, Visual Studio, AWS, MSSQL Server Management Studio, IIS}
+    \resumeSectionType{Concepts}{:}{\fontsize{10pt}{13pt}\selectfont Flutter State Management, Dependency Management, Asynchronous Programming, Object-Oriented Programming, Restful APIs, Object Oriented Programming, Debugging, Event-Driven Architecture} 
+  \resumeHeadingListEnd{}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {B. Tech in Computer Engineering}{Aug 2017 -- May 2021}
+      {P P Savani University, Surat, Gujarat}{CGPA: 6.67/10.00}
+  % \resumeSubHeadingListEnd
+  % \resumeSubHeadingListStart
+    \resumeSubheading
+      {12th Board - GSHSEB}{Jun 2015 -- Mar 2016}
+      {Kaushal Vidhyabhavan, Surat, Gujarat}{Percentage: 77/100}
+  \resumeSubHeadingListEnd    
+
+
+\section{ACHIEVEMENTS}
+
+\resumeItemListStart
+    \resumeItem {Completed Google AR/VR Boot Course on Introduction to Augmented Reality and ARCore}
+\resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{GRADUATE PROJECTS}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+         {\textbf{ARBrush - AR Filter App} $|$ \emph{ Flutter, DeepAR, Blender, Firebase, ARCore }}
+         {}
+          \resumeItemListStart
+            \resumeItem{
+Developed immersive AR filters for ARBrush app using Flutter and DeepAR Flutter, integrating cutting-edge technology to enhance user engagement and interaction.
+}
+            \resumeItem{
+Leveraged Blender to create visually stunning 3D assets and animations, elevating the quality and appeal of ARBrush filters, and ensuring a seamless user experience.
+}
+            \resumeItem{
+Implemented Firebase for backend support, enabling real-time data storage, user authentication, and analytics, optimizing performance and scalability for ARBrush's growing user base.
+}
+          \resumeItemListEnd
+          \vspace{-15pt}
+      \resumeProjectHeading
+          {\textbf{Emosic - Emotion Base Music Player} $|$ \emph{ Flutter, Google ML Kit, Firebase }}
+         {}
+          \resumeItemListStart
+            \resumeItem{
+Developed Emosic, an innovative emotion-based music player leveraging Google ML Kit for emotion recognition, Flutter for cross-platform compatibility, and Dart for robust programming.}
+            \resumeItem{
+Implemented Firebase for seamless cloud storage and real-time data synchronization, ensuring a smooth and personalized music listening experience tailored to the user's emotions.}
+            \resumeItem{
+Spearheaded the creation of Emosic, from conceptualization to deployment, showcasing adept skills in software engineering, machine learning integration, and cloud-based solutions within the realm of mobile app development.}
+          \resumeItemListEnd    
+    \resumeSubHeadingListEnd
+\end{document}
